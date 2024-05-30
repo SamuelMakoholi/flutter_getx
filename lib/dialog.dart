@@ -61,6 +61,30 @@ class Dialogg extends StatelessWidget {
                   //color for default cancel and confirm
 
                   buttonColor: Colors.green,
+
+                  cancel: Text(
+                    "Cancels",
+                    style: TextStyle(color: Colors.white),
+                  ),
+
+                   confirm: Text(
+                    "Confirms",
+                    style: TextStyle(color: Colors.white),
+                  ),
+
+                  actions: [
+                    ElevatedButton(onPressed: (){
+                      Get.back();
+                    },
+                    child: Text("Action-1")),
+
+                    ElevatedButton(onPressed: (){
+                     
+                    },
+                    child: Text("Action-2")),
+                  ],
+                  barrierDismissible: true,
+
                 );
               }, 
               child: Text("Show Dialog"))
